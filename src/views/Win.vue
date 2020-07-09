@@ -12,7 +12,7 @@
         created () {
             setTimeout(() => {
                 this.$router.push('/');
-            },4000);
+            },6000);
         },
     }
 </script>
@@ -20,7 +20,7 @@
 <style lang="scss" scoped>
 .win{
     position: relative;
-    bottom: 57vh;
+    bottom: 41vh;
     margin: auto;
     width: fit-content;
 }

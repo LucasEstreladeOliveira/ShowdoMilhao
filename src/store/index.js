@@ -13,7 +13,6 @@ export default new Vuex.Store({
       state.money = m;
     },
     addErrar(state, paramsErro){
-      console.log(paramsErro.etapa)
       if(paramsErro.etapa !== 4){
         state.errar = paramsErro.money/2;
       }else{

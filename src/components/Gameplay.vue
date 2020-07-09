@@ -14,21 +14,21 @@
         </v-btn>
       </div>
       <v-row class="escolhas">
-        <v-col cols="4">
+        <v-col cols="4" style="padding: 10px !important;">
           <v-card class="escolha" color="yellow" height="80"> 
-            <p class="text-h6 escolha-text">{{ proxValor }}</p>
+            <p class="text-subtitle-1 font-weight-black escolha-text">{{ new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(proxValor)}} </p>
           </v-card>
           <div style="color: white; text-align:center" class="text-h5"> ACERTAR </div>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="4" style="padding: 10px !important;">
           <v-card @click="parar()" class="escolha" color="yellow" height="80">
-            <p class="text-h6 escolha-text">{{ $store.state.money }}</p>
+            <p class="text-subtitle-1 font-weight-black escolha-text">{{ new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format($store.state.money)}}</p>
           </v-card>
           <div style="color: white; text-align:center" class="text-h5"> PARAR </div>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="4" style="padding: 10px !important;">
           <v-card class="escolha" color="yellow" height="80">
-            <p class="text-h6 escolha-text">{{ $store.state.errar }}</p>
+            <p class="text-subtitle-1 font-weight-black escolha-text">{{ new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format($store.state.errar)}}</p>
           </v-card>
           <div style="color: white; text-align:center" class="text-h5"> ERRAR </div>
         </v-col>
@@ -107,8 +107,6 @@
               this.$router.push('/score');   
             }, 1000); 
           }
-                console.log(this.count)
-
       },
       parar(){
         this.$router.push('/score');
@@ -156,8 +154,8 @@
 }
 
 .escolha{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
 
 }
 
