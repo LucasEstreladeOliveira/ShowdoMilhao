@@ -1,370 +1,370 @@
 {
     "perguntas":[
         {
-            "pergunta":"Pergunta 1",
+            "pergunta":"QUANTAS LETRAS CONTÉM A ESCRITA DA BANDEIRA NACIONAL BRASILEIRA?",
             "valor": 1000,
             "etapa": 1,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "13",
+                    "certo": false
+                },
+                {
+                    "label": "14",
+                    "certo": false
+                },
+                {
+                    "label": "15",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "16",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 2",
+            "pergunta":"O QUE É A VIA LÁCTEA?",
             "valor": 1000,
             "etapa":1,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "Marca de Leite",
                     "certo": false
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "Civilização Antiga",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
+                    "label": "Marca de Carro",
+                    "certo": false
+                },
+                {
+                    "label": "Galáxia",
                     "certo": true
-                },
-                {
-                    "label": "resposta 4",
-                    "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 3",
+            "pergunta":"QUAL FRUTA É RESSECADA PARA SE TORNAR UMA AMEIXA SECA?",
             "valor": 1000,
             "etapa":1,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "AMEIXA",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "UVA",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
+                    "label": "PÊSSEGO",
                     "certo": false
                 },
                 {
-                    "label": "resposta 4",
-                    "certo": true
+                    "label": "MELÃO",
+                    "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 4",
+            "pergunta":"QUAL O METAL É UTILIZADO NA CUNHAGEM DE MOEDAS?",
             "valor": 1000,
             "etapa":1,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "NÍQUEL",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "HÉLIO",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
+                    "label": "CHUMBO",
                     "certo": false
                 },
                 {
-                    "label": "resposta 4",
+                    "label": "MERCÚRIO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 5",
+            "pergunta":"O QUE O CHICO BENTO USA NA CABEÇA?",
             "valor": 1000,
             "etapa":1,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "TOUCA",
+                    "certo": false
+                },
+                {
+                    "label": "CHAPÉU",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "BONÉ",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "TIARA",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 6",
+            "pergunta":"QUEM DA TURMA DA MÔNICA É METIDO A CIENTISTA?",
             "valor": 10000,
             "etapa":2,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "CEBOLINHA",
+                    "certo": false
+                },
+                {
+                    "label": "CASCÃO",
+                    "certo": false
+                },
+                {
+                    "label": "FRANJINHA",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "HORÁCIO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 7",
+            "pergunta":"QUE ANIMAL DA FAUNA BRASILEIRA ESTÁ RETRATADO NA NOTA DE DEZ REAIS?",
             "valor": 10000,
             "etapa":2,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "JABUTI",
+                    "certo": false
+                },
+                {
+                    "label": "ONÇA",
+                    "certo": false
+                },
+                {
+                    "label": "ARARA",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "TUCANO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 8",
+            "pergunta":"COMO É CHAMADA A DOENÇA QUE ESTÁ CLAREANDO A PELE DE MICHAEL JACKSON?",
             "valor": 10000,
             "etapa":2,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "ASTIGMATISMO",
+                    "certo": false
+                },
+                {
+                    "label": "AUTISMO",
+                    "certo": false
+                },
+                {
+                    "label": "VITILIGO",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "BRUXISMO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 9",
+            "pergunta":"QUAL A CAPITAL DO CHILE?",
             "valor": 10000,
             "etapa":2,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "PEQUIM",
+                    "certo": false
+                },
+                {
+                    "label": "MADRID",
+                    "certo": false
+                },
+                {
+                    "label": "SANTIAGO",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "CABUL",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 10",
+            "pergunta":"QUAL A PROFISSÃO DOS SETE ANÕES?",
             "valor": 10000,
             "etapa":2,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "MINEIROS",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "LENHADORES",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
+                    "label": "AGRICULTORES",
                     "certo": false
                 },
                 {
-                    "label": "resposta 4",
+                    "label": "PASTORES",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 11",
+            "pergunta":"QUAL É A INVENÇÃO DE GUGLIELMO MARCONI?",
             "valor": 100000,
             "etapa":3,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "TELESCÓPIO",
+                    "certo": false
+                },
+                {
+                    "label": "TELEVISÃO",
+                    "certo": false
+                },
+                {
+                    "label": "TELEFONE",
+                    "certo": false
+                },
+                {
+                    "label": "RÁDIO",
                     "certo": true
-                },
-                {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
-                    "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 12",
+            "pergunta":"QUANTAS DENTIÇÕES TEM O SER HUMANO DURANTE A VIDA?",
             "valor": 100000,
             "etapa":3,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "UMA",
+                    "certo": false
+                },
+                {
+                    "label": "DUAS",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "TRÊS",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "QUATRO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 13",
+            "pergunta":"A QUE CONTINENTE PERTENCE O RIO AMAZONAS?",
             "valor": 100000,
             "etapa":3,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "AMERICANO",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "AFRICANO",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
+                    "label": "EUROPEU",
                     "certo": false
                 },
                 {
-                    "label": "resposta 4",
+                    "label": "ASIÁTICO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 14",
+            "pergunta":"QUANTAS ESTRELAS TEM A BANDEIRA DO BRASIL?",
             "valor": 100000,
             "etapa":3,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "26",
+                    "certo": false
+                },
+                {
+                    "label": "27",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
+                    "label": "28",
                     "certo": false
                 },
                 {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "29",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 15",
+            "pergunta":"O AVIÃO QUE ULTRAPASSA A VELOCIDADE DO SOM É ____?",
             "valor": 100000,
             "etapa":3,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "HIPERSÔNICO",
+                    "certo": false
+                },
+                {
+                    "label": "SÔNICO",
+                    "certo": false
+                },
+                {
+                    "label": "SUPERSÔNICO",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 3",
-                    "certo": false
-                },
-                {
-                    "label": "resposta 4",
+                    "label": "MEGASÔNICO",
                     "certo": false
                 }
             ]
         },
         {
-            "pergunta":"Pergunta 16",
+            "pergunta":"LUCAS ESTRELA DEVE PASSAR DESSA FASE DO PROCESSO SELETIVO?",
             "valor": 1000000,
             "etapa": 4,
             "respostas": [
                 {
-                    "label": "resposta 1",
+                    "label": "SIM",
                     "certo": true
                 },
                 {
-                    "label": "resposta 2",
-                    "certo": false
+                    "label": "CLARO",
+                    "certo": true
                 },
                 {
-                    "label": "resposta 3",
-                    "certo": false
+                    "label": "COM CERTEZA",
+                    "certo": true
                 },
                 {
-                    "label": "resposta 4",
-                    "certo": false
+                    "label": "PODE CRER!!",
+                    "certo": true
                 }
             ]
         }
