@@ -59,6 +59,11 @@
     created () {
       this.state = "aguardando-resposta.jpeg";
       this.$store.commit('addMoney', this.money);
+      let paramsErro = {
+        money: this.money,
+        etapa: this.data.perguntas[this.count].etapa, 
+      }
+      this.$store.commit('addErrar', paramsErro);
       this.proxValor = this.incrementaValor(this.money, this.count, true);
     },
     methods: {
