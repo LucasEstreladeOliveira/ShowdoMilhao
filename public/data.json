@@ -2,7 +2,8 @@
     "perguntas":[
         {
             "pergunta":"Pergunta 1",
-            "valor": 100,
+            "valor": 1000,
+            "etapa": 1,
             "respostas": [
                 {
                     "label": "resposta 1",
@@ -24,7 +25,8 @@
         },
         {
             "pergunta":"Pergunta 2",
-            "valor": 100,
+            "valor": 1000,
+            "etapa":1,
             "respostas": [
                 {
                     "label": "resposta 1",
@@ -46,7 +48,8 @@
         },
         {
             "pergunta":"Pergunta 3",
-            "valor": 100,
+            "valor": 1000,
+            "etapa":1,
             "respostas": [
                 {
                     "label": "resposta 1",
@@ -68,7 +71,284 @@
         },
         {
             "pergunta":"Pergunta 4",
-            "valor": 100,
+            "valor": 1000,
+            "etapa":1,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 5",
+            "valor": 1000,
+            "etapa":1,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 6",
+            "valor": 10000,
+            "etapa":2,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 7",
+            "valor": 10000,
+            "etapa":2,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 8",
+            "valor": 10000,
+            "etapa":2,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 9",
+            "valor": 10000,
+            "etapa":2,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 10",
+            "valor": 10000,
+            "etapa":2,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 11",
+            "valor": 100000,
+            "etapa":3,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 12",
+            "valor": 100000,
+            "etapa":3,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 13",
+            "valor": 100000,
+            "etapa":3,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 14",
+            "valor": 100000,
+            "etapa":3,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 15",
+            "valor": 100000,
+            "etapa":3,
+            "respostas": [
+                {
+                    "label": "resposta 1",
+                    "certo": true
+                },
+                {
+                    "label": "resposta 2",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 3",
+                    "certo": false
+                },
+                {
+                    "label": "resposta 4",
+                    "certo": false
+                }
+            ]
+        },
+        {
+            "pergunta":"Pergunta 16",
+            "valor": 1000000,
+            "etapa": 4,
             "respostas": [
                 {
                     "label": "resposta 1",

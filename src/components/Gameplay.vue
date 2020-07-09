@@ -11,7 +11,12 @@
         <v-btn :disabled="erro" v-for="r in data.perguntas[count].respostas" v-bind:key="r.label" class="resposta text-h6" width="428" @click="adicionaResposta(r)">
           <p style="margin-left:10px">{{ r.label }}</p>
         </v-btn>
-      </div>  
+      </div>
+      <div class="escolhas">
+        <v-card><p>{{ }}</p></v-card>
+        <v-card><p></p></v-card>
+        <v-card><v-btn @click="parar()">{{ data.perguntas[count].valor }}</v-btn></v-card>
+      </div>
     </v-col>
     <v-col style="padding:0px" cols="8" >
       <v-img :src="require('../../public/' + state)" class="image-reaction"></v-img>
@@ -30,6 +35,7 @@
         state: "",
         erro: false,
         money: 0,
+        etapaAnterior: 1,
       }
     },
     created () {
@@ -37,30 +43,41 @@
     },
     methods: {
       adicionaResposta(r){
-        if(r.certo == true){
-          this.state = "resposta-certa.jpeg";
-          this.money += this.data.perguntas[this.count].valor;
-          console.log(this.money);
-          setTimeout(() => {
-            this.state = "aguardando-resposta.jpeg";
-            if(this.data.perguntas.length == this.count + 1){
-              console.log("eita caraio!!!")
-              setTimeout(() => {
-                this.$router.push("/win");
-              })
-            }else{
-              this.count++;       
-            }
-          }, 1000)
-        }else{
-          this.state = "resposta-errada.jpeg";
-          this.erro = true;
-          setTimeout(() => {
-              this.$router.push('/');   
-          }, 1000); 
-        }
+        // Verifica se a resposta está correta ou não
+          if(r.certo == true){
+            this.state = "resposta-certa.jpeg";
+            // Verifica etapa para contabilização do prêmio
+              if(this.data.perguntas[this.count].etapa === this.etapaAnterior){
+                this.money += this.data.perguntas[this.count].valor;
+              }else{
+                this.money = this.data.perguntas[this.count].valor;
+                this.etapaAnterior = this.data.perguntas[this.count].etapa;
+              }
+            setTimeout(() => {
+              this.state = "aguardando-resposta.jpeg";
+              // Verifica se voce acertou todas as perguntas ou não
+                if(this.data.perguntas.length == this.count + 1){
+                  setTimeout(() => {
+                    this.$router.push("/win");
+                  })
+                }else{
+                  this.count++;       
+                }
+            }, 1000)
+          }else{
+            this.state = "resposta-errada.jpeg";
+            this.erro = true;
+            setTimeout(() => {
+                this.$router.push('/');   
+            }, 1000); 
+          }
 
-      }
+      },
+      parar(){
+        this.$emit('score', this.money);
+        this.$router.push('/score');
+  
+      },
     },
   }
 </script>
