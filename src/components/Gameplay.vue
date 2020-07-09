@@ -1,8 +1,9 @@
 <template>
   <v-row>
     <v-col style="padding-top:0px; padding-right: 0px" cols="4" >
-      <v-card tile flat class="main-card"> 
-        <v-img src="../../public/JogodomilhaoLogo.png" height="100" contain></v-img>
+      <v-card tile flat class="main-card">
+        <v-img src="../../public/background-perguntas.jpeg"></v-img> 
+        <v-img src="../../public/JogodomilhaoLogo.png" style="position:relative; bottom:94vh" height="100" contain></v-img>
       </v-card>
       <div class="pergunta-div">
         <v-card class="pergunta-card"> 
@@ -12,11 +13,26 @@
           <p style="margin-left:10px">{{ r.label }}</p>
         </v-btn>
       </div>
-      <div class="escolhas">
-        <v-card><p>{{ }}</p></v-card>
-        <v-card><p></p></v-card>
-        <v-card><v-btn @click="parar()">{{ data.perguntas[count].valor }}</v-btn></v-card>
-      </div>
+      <v-row class="escolhas">
+        <v-col cols="4">
+          <v-card class="escolha" color="yellow" height="80"> 
+            <p class="text-h6 escolha-text">{{ proxValor }}</p>
+          </v-card>
+          <div style="color: white; text-align:center" class="text-h5"> ACERTAR </div>
+        </v-col>
+        <v-col cols="4">
+          <v-card @click="parar()" class="escolha" color="yellow" height="80">
+            <p class="text-h6 escolha-text">{{ $store.state.money }}</p>
+          </v-card>
+          <div style="color: white; text-align:center" class="text-h5"> PARAR </div>
+        </v-col>
+        <v-col cols="4">
+          <v-card class="escolha" color="yellow" height="80">
+            <p class="text-h6 escolha-text">{{ $store.state.errar }}</p>
+          </v-card>
+          <div style="color: white; text-align:center" class="text-h5"> ERRAR </div>
+        </v-col>
+      </v-row>
     </v-col>
     <v-col style="padding:0px" cols="8" >
       <v-img :src="require('../../public/' + state)" class="image-reaction"></v-img>
@@ -26,67 +42,84 @@
 
 <script>
   import dados from "../../public/data.json";
+
   export default {
-    name: 'HelloWorld',
+    name: 'Gameplay',
     data() {
       return {
         data: dados,
         count:0,
         state: "",
         erro: false,
-        money: 0,
         etapaAnterior: 1,
+        money: 0,
+        proxValor: 0,
       }
     },
     created () {
       this.state = "aguardando-resposta.jpeg";
+      this.$store.commit('addMoney', this.money);
+      this.proxValor = this.incrementaValor(this.money, this.count, true);
     },
     methods: {
+      incrementaValor(valor, count, prox){
+        if(this.data.perguntas[count].etapa === this.etapaAnterior){
+          valor += this.data.perguntas[count].valor;
+        }else{
+          valor = this.data.perguntas[count].valor;
+          if(!prox){
+            this.etapaAnterior = this.data.perguntas[count].etapa;
+          }
+        } 
+        return valor;       
+      },
       adicionaResposta(r){
         // Verifica se a resposta está correta ou não
           if(r.certo == true){
             this.state = "resposta-certa.jpeg";
             // Verifica etapa para contabilização do prêmio
-              if(this.data.perguntas[this.count].etapa === this.etapaAnterior){
-                this.money += this.data.perguntas[this.count].valor;
-              }else{
-                this.money = this.data.perguntas[this.count].valor;
-                this.etapaAnterior = this.data.perguntas[this.count].etapa;
-              }
             setTimeout(() => {
               this.state = "aguardando-resposta.jpeg";
+              this.money = this.incrementaValor(this.money, this.count, false);
+              this.$store.commit('addMoney', this.money);
               // Verifica se voce acertou todas as perguntas ou não
+                console.log(this.data.perguntas.length)
                 if(this.data.perguntas.length == this.count + 1){
                   setTimeout(() => {
                     this.$router.push("/win");
                   })
                 }else{
-                  this.count++;       
+                  this.proxValor = this.incrementaValor(this.money, this.count+1, true);
+                  this.count++; 
+                  let paramsErro = {
+                    money: this.money,
+                    etapa: this.data.perguntas[this.count].etapa, 
+                  }
+                  this.$store.commit('addErrar', paramsErro);
+                  
                 }
             }, 1000)
           }else{
             this.state = "resposta-errada.jpeg";
             this.erro = true;
             setTimeout(() => {
-                this.$router.push('/');   
+              this.$store.commit('addMoney', this.$store.state.errar);
+              this.$router.push('/score');   
             }, 1000); 
           }
+                console.log(this.count)
 
       },
       parar(){
-        this.$emit('score', this.money);
         this.$router.push('/score');
-  
       },
     },
   }
 </script>
 <style scoped>
 .main-card{
-  background-color: blue !important;
   height: 100vh;
   width:36vw;
-  padding-top: 70px
 }
 .pergunta-div{
   position: relative;
@@ -122,4 +155,22 @@
   height: 100vh;
 }
 
+.escolha{
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.escolhas{
+  position:relative;
+  bottom: 67vh;
+}
+
+.escolha-text{
+  color: red;
+  margin-bottom: 0px;
+  top: 30%;
+  position: relative;
+  text-align: center;
+}
 </style>
